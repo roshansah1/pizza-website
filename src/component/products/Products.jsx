@@ -12,27 +12,29 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 const Products = () => {
-  
+   console.log("products", products)
     const dispatch = useDispatch()
-    const data = useSelector( state => state.fetchProductsData.products)
+    //const data = useSelector( state => state.fetchProductsData.products)
     const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
+    const [flag, setFlag] = useState(false)
 
-    console.log(data)
+    //console.log(data)
    
- function getData(){
-     dispatch(getProducts(products))
+//  function getData(){
+//      dispatch(getProducts(products))
+// }
+
+const getProduct = (ele) => {
+    localStorage.setItem("product", JSON.stringify(ele))
 }
 
-useEffect(() => {
-    getData()
-},)
 
 const product = JSON.parse(localStorage.getItem("product"))
 
   return (
    <div className='product_container'>
-    {data && data.map(ele => {
+    {products && products.map(ele => {
         return(
             <div className='pizza_box' key={ele.id}>
                 <img src={ele.img} alt={ele.name} />
@@ -43,14 +45,16 @@ const product = JSON.parse(localStorage.getItem("product"))
                 <Button className='button add_cart_button' variant="contained" onClick={() => navigate("/order")}>ADD TO CART</Button>
                 <Button className='button quick_view_button' variant="contained" onClick={() => {
                     setIsOpen(true)
-                    localStorage.setItem("product", JSON.stringify(ele))
+                    setFlag(true)
+                    getProduct(ele)
                 }}>QUICK VIEW</Button>
                 </div>
             </div>
         )
     })}
     
-    <div className='react_modal'>
+    {flag ? (
+        <div className='react_modal'>
                     <ReactModal
                         className="modal"
                         isOpen={isOpen}
@@ -120,6 +124,7 @@ const product = JSON.parse(localStorage.getItem("product"))
                         </div>
                     </ReactModal>
                 </div>
+    ): (<></>)}
    </div>
   )
 }
