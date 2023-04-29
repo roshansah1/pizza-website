@@ -33,7 +33,7 @@ const product = JSON.parse(localStorage.getItem("product"))
   return (
    <div className='product_container'>
     {data && data.map(ele => {
-        return(<>
+        return(
             <div className='pizza_box' key={ele.id}>
                 <img src={ele.img} alt={ele.name} />
                 <h3>{ele.name}</h3>
@@ -47,7 +47,7 @@ const product = JSON.parse(localStorage.getItem("product"))
                 }}>QUICK VIEW</Button>
                 </div>
             </div>
-        </>)
+        )
     })}
     
     <div className='react_modal'>
