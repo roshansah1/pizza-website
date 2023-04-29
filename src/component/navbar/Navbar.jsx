@@ -22,7 +22,7 @@ const Navbar = () => {
           }}>HOME</li>
           <li onClick={() => {
             window.scrollTo({
-              top: 1000,
+              top: window.innerHeight,
               behavior: 'smooth'
             });
           }}>PAGES</li>

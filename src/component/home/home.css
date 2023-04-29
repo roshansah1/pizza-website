@@ -299,6 +299,18 @@
     }
 }
 
+@media only screen and (max-width: 1550px){
+    .pizza_image img{
+        height: 635px;
+        
+    }
+    .pizza_image{
+        top: 0px;
+        right: 40px;
+    }
+}
+
+
 @media only screen and (max-width: 1400px){
     .pizza_image{
         top: 100px;
