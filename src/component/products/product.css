@@ -1,0 +1,94 @@
+
+.product_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 1em;
+    justify-content: center;
+    gap: 4em;
+}
+
+.pizza_box{
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+   margin-top: 2.5em;
+   position: relative;
+}
+
+
+
+.pizza_box h3{
+    color: #b7903c;
+    margin-top: 0.5em;
+}
+
+.pizza_box h2{
+    color: #d2401e;
+}
+
+.rating{
+    margin-top: 0.5em;
+}
+
+.pizza_box img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+   
+}
+
+.two_buttons{
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.button{
+    font-family: Oswald,sans-serif;
+    line-height: 1.4em !important;
+    letter-spacing: .2em !important;
+    font-weight: 600 !important;
+    padding: 16px 21px !important;
+    font-size: 11px !important;
+    min-width: 125px !important;
+    border-radius: 0 !important;
+}
+
+.add_cart_button{
+    color: #fff !important;
+    background-color: #d2401e !important;
+}
+
+.add_cart_button:hover{
+    background-color: #be2a09 !important;
+}
+
+.quick_view_button{
+    background-color: #f7f7f2 !important;
+    color: #000 !important;
+}
+
+.quick_view_button:hover{
+    background-color: #e0e0da !important;
+}
+
+@media only screen and (min-width: 1600px){
+    .product_container{
+        justify-content: space-around;
+        padding: 4em 8em;
+    }
+}
+
+
+  
+  .two_buttons {
+    opacity: 0; /* hide the buttons by default */
+    transition: all 0.3s ease-in-out; /* add a smooth transition */
+  }
+  
+  .pizza_box:hover .two_buttons {
+    opacity: 1; /* show the buttons on hover */
+  }

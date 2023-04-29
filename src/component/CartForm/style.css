@@ -1,0 +1,158 @@
+
+.form_container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://d3255hq6rclyj1.cloudfront.net/19d8f73fd45662aeeabd56c0c61f8d8f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+    padding: 3em 10em;
+    user-select: none;
+    overflow :hidden;
+}
+
+.form_content{
+    width: 600px;
+}
+
+
+.form_title{
+    background-color: rgba(242,194,160,1);
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2em;
+    gap: 0.6em;
+}
+
+.form_title h2{
+    font-size: 28px;
+    color: rgba(0,0,0,1);
+    font-weight: bold !important;
+}
+
+.form_title p{
+    font-size: 18px;
+}
+
+.form_inputs{
+    background-color: rgba(240,240,240,0.75);
+    padding-left: 2em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+input[type="email"], input[type="number"]{
+    width: 300px;
+    font-size: large;
+    outline: none;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    border-radius: 30%;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid gray;
+    background-color: #fff;
+   
+}
+
+
+input[type="checkbox"]:checked{
+    background: url(https://www.citypng.com/public/uploads/preview/-31622652360keqnmdomq3.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+input[type="radio"]{
+    width: 25px;
+    height: 25px;
+}
+
+.form_inputs p{
+    font-size: large;
+    margin-bottom: 0.2em;
+}
+
+.pizza_size label , .toppings label{
+    margin-left: 0.2em;
+    margin-right: 0.75em;
+    font-size: large;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    padding-bottom: 2em;
+}
+
+.order_now_button{
+    font-size: 20px !important;
+    height: 60px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 6px !important;
+    background-color: rgba(232,58,2,0.89) !important;
+    width: 100%;
+    margin-top: 1em !important;
+}
+.back_home_button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.home_button{
+    background-color: rgba(255, 84, 28, 0.89) !important;
+    margin-top: 1em !important;
+    font-size: 17px !important;
+    border-width: 1px !important;
+    border-radius: 6px !important;
+    padding: 0.5em 2em !important;
+    border-style: solid !important;
+    
+}
+
+@media only screen and (max-width: 1550px){
+        .form_container{
+            padding: 2em 4em;
+            overflow-y: scroll;
+        }
+}
+
+@media only screen and (max-width: 700px){
+    .form_container{
+        padding: 1em 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pizza_size label , .toppings label{
+        font-size: 14px;
+    }
+
+    input[type="checkbox"], input[type="radio"]{
+        width: 15px;
+        height: 15px;
+    }
+
+    .Sausage{
+        display: block;
+    }
+
+    .form_title, .form_inputs{
+        padding-left: 1em;
+    }
+}

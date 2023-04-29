@@ -1,0 +1,12 @@
+.order_gif img, .order_sucess_container h1, .order_gif{
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 500px){
+   .order_sucess_container h1{
+        font-size: 28px;
+    }
+    .order_gif img{
+        width: 350px;
+    }
+}

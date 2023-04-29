@@ -1,0 +1,65 @@
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    width: 175px;
+    box-shadow: 0 0 4px 0 rgba(79,105,73,.09);
+}
+
+.nav_logo {
+    padding-top: 2em;
+}
+
+li {
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_list li {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding-bottom: 1em;
+}
+
+li:hover {
+    color:#d54a29;
+    cursor: pointer;
+}
+
+.nav_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_buttons ul{
+    display: flex;
+    gap: 0.8em;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+    font-size: 1.1em !important;
+}
+
+.nav_buttons button{
+    background-color: #d2401e;
+    color: #fff;
+    border: none;
+    width: 175px;
+    padding: 1em 0 1em 0;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_buttons button:hover{
+    background-color: #ba4125;
+}
