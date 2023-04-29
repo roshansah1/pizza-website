@@ -5,9 +5,13 @@
 ## Features
 
 --> Responsive design that looks great on both desktop and mobile devices
+
 --> Easy-to-use navigation menu
+
 --> Interactive pizza menu that allows users to customize their pizza orders
+
 --> Contact form that allows users to send messages to the website owner
+
 --> React component-based architecture that promotes reusability and maintainability
 
 ## Technologies Used
