@@ -4,6 +4,7 @@
 .home_container{
     display: flex;
     font-family: 'Oswald', sans-serif !important;
+    overflow-x: hidden;
 }
 
 .nav_component{
@@ -378,6 +379,10 @@
     .home_content{
         width: 100vw;
         margin: 0;
+        overflow-x: hidden;
+    }
+    .home_container{
+        overflow-x: hidden;
     }
 }
 
